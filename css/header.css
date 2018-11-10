@@ -1,0 +1,114 @@
+body {
+    font-family:"Rubik", sans-serif;
+    overflow-x: hidden;
+}
+.header {
+    width:100%;
+    height:100vh;
+    background-image: url("../svg/header.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header-container {
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.header-title {
+    color:black;
+    margin-right:15%;
+    margin-bottom:10%;
+    width:30%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding:0px;
+}
+.header-title span {
+    width:100%;
+    height:30%;
+    font-weight:lighter;
+    font-size:2em;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.eich1 {
+    width:100% !important;
+    height:70% !important;
+    font-weight:bolder !important;
+    font-size:4em !important;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 13px !important;
+}
+.header-title span:after {
+    content: "" !important;
+    display: inline-block !important;
+    width: 100% !important;
+}
+  
+
+
+
+.about-container {
+    width:100%;
+    height:95vh;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+.about-text-container {
+    margin-top:6%;
+    width:80%;
+    height:35vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-container {
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text-container {
+    width:70%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-container p {
+    width:90%;
+    font-size:1.8em;
+    text-align: justify;
+    font-weight:lighter;
+}
+.line {
+    margin-top:10%;
+    width:80%;
+    height:1px;
+    border:1px solid black;
+    background-color:black;
+}
+.title-container div {
+    font-size:3em;
+    font-weight: 300;
+    text-transform:uppercase; 
+}
+i {
+    color:#AB47BC;
+}

@@ -1,0 +1,208 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575px) {
+    body {
+        width:100%;
+    }
+    .about-container {
+        height:auto !important;
+    }
+    .about-text-container {
+        width:100%;
+        height:auto;
+        margin-top:13.5% !important;
+        margin-bottom:13.5% !important;
+    }
+    .text-container {
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    .text-container p {
+        font-size:1.6em;
+        text-align: justify;
+        width:90%;
+        height:80%;
+    }
+    .line-container {
+        display:none;
+    }
+    .line {
+        margin-top:18%;
+    }
+    .about-text-container {
+        margin:0;
+    }
+    .title-container {
+        display:flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom:10%;
+        margin-top:2%;
+    }
+    .title-container div {
+        text-align: center;
+    }
+
+    /*PRODUCTS CONTAINER*/
+    .product {
+        justify-content: flex-start;
+    }
+    .products-container {
+        flex-direction:column;
+        height:60vh;
+    }
+    .products-container .product {
+        width:100%;
+    }
+    .product-name {
+        width:50%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .product-name span {
+        font-size:1.5em;
+        letter-spacing:8px;
+        font-weight: lighter;
+    }
+    .product img {
+        width:40%;
+        height:50%;
+    }
+    /*WORK CONTAINER*/
+    .work-container {
+        width:100%;
+        flex-direction:column;
+        height:auto;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items:center;
+    }
+    .work-title, .work-show {
+        width:100%;
+    }
+    .work-title {
+        text-align: center;
+        justify-content: center;
+        margin-top:4%;
+        margin-bottom:12%;
+    }
+    .work-title h2 {
+        font-size:2.4em;
+    }
+    .work-show {
+        align-items: center;
+        width:95%;
+        margin-bottom:12%;
+    }
+    .work-show p {
+        text-align: center;
+    }
+    .header-container {
+        justify-content:center;
+        align-items: center;
+    }
+    .header-title {
+        width:80%;
+        margin:0;
+    }
+    .header-title span {
+        font-size:1em;
+        color:white;
+        text-align:center;
+    }
+    .eich1 {
+        font-size:3em !important;
+        color:white;
+        letter-spacing: none;
+        text-align:center;
+    }
+    /*social media*/
+    .social-media {
+        display:none !important;
+    }
+
+    /*gallery*/
+    .gallery-container {
+        width:100%;
+        height:auto !important;
+    }
+    .images-container {
+        width:100% !important;
+        height:auto !important;
+    }
+    .img-container {
+        width:100% !important;
+        height:80vh !important;
+    }
+    .img-cover {
+        background-color:rgba(0,0,0, 0.65);
+    }
+    .img-cover a {
+        opacity:1;
+    }
+    .img-cover h2 {
+        background-color:transparent;
+        color:white;
+    }
+    .bg-link {
+        color:white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border:1pt solid white;
+        width:75% !important;
+        height:12% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:0.65s ease-in-out all;
+        font-weight: lighter;
+    }
+
+    /*COTIZACIONES*/
+    .divider {
+        margin-top:15% !important;
+        margin-bottom:15% !important;
+    }
+    .coth2 {
+        width:100%;
+        text-align: center;
+        font-size:2.4em !important;
+        font-weight:lighter !important;
+        letter-spacing: 0px !important;
+        text-transform: uppercase;
+        margin-bottom:20% !important;
+    }
+    .cot-container {
+        height:auto !important;
+    }
+    .cot-options {
+        width:100%;
+        flex-wrap: wrap;
+    }
+    .cot-options .option {
+        width:100%;
+        height:auto !important;
+        margin-bottom:15% !important;
+    }
+    .cot-options .option a {
+        padding:8px;
+    }
+    .opt-title {
+        margin-bottom:2%;
+    }
+    
+}
+
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}

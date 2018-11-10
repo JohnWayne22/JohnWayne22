@@ -1,0 +1,54 @@
+.work-container {
+    width:90%;
+    height:auto;
+    padding-top:2%;
+    padding-bottom:2%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.work-show {
+    width:26%;
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom:4%;
+}
+.work-show h4 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing:1pt;
+    text-transform: uppercase;  
+}
+.work-show h4 i {
+    margin-left:6%;
+    font-size:1.4em;
+}
+.work-show p {
+    text-align: justify;
+    font-family:"Rubik", sans-serif;
+    font-weight: lighter;
+    font-size:0.9em;
+    width:100%;
+}
+.sbg {
+    width:20%;
+}
+.work-title {
+    width:26%;
+    height:50%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom:4%;
+}
+.work-title h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3em;
+}
