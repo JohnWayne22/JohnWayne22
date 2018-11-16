@@ -3,8 +3,8 @@
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 575px) {
-    body {
-        width:100% !important;
+    html, body {
+        width:100vw !important;
         overflow-x: hidden;
     }
     .about-container {
@@ -198,15 +198,154 @@
         margin-bottom:2%;
     }
     #phoneCall {
-        display:block;
+        display:flex;
     }
     #getNumber {
         display:none !important;
     }
+    nav {
+        background-color: #424242;
+    }
+    .icons-container {
+        flex-direction:column;
+    }
+    .icon-s {
+        width:95%;
+    }
+    .backimage {
+        width:93%;
+    }
+    .navbar-brand {
+        display:none !important;
+    }
+    .work-title-sellos {
+        order:-3 !important;
+    }
+    .galeria {
+        width:100%;
+        margin:auto !important;
+    }
+    .galeria-container {
+        width:100%;
+        flex-wrap: wrap !important;
+        height:auto !important;
+        margin:0% !important;
+    }
+    .prod-container {
+        width:100% !important;
+        height:100vh !important; 
+        border-radius:0px !important;
+        margin:0% !important;
+    }
+    .galeria-container:nth-child(1) .prod-container:nth-child(1) {
+        height:90vh !important;
+        padding-top:8%;
+    }
+    .sello-rsv {
+        bottom:3% !important;
+        left: auto !important;
+    }
+    .galeria-container:nth-child(1) .prod-container {
+        justify-content: center !important;
+        align-items: flex-start !important;
+        margin:0 !important;
+    }
+    .prod-title-container {
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding:0 !important;
+    }
+    .prod-title-container span {
+        width:100%;
+        text-align:center !important;
+    }
+    .galeria-container:nth-child(1) .prod-container:nth-child(2) .sprod-container, .galeria-container:nth-child(1) .prod-container:nth-child(2) .sprod-container .prod-title-container {
+        justify-content: center !important;
+        align-items: center !important;
+        padding:0;
+    }
+    .inv-rsv {
+        font-size:3em !important;
+    }
+    .laser-rsv {
+        top:auto !important;
+        bottom:-19% !important;
+        right:-11% !important;
+        transform: scaleX(-1) rotate(330deg) !important;
+        z-index: 0 !important;
+
+    }
+    .laser-rsv ~ div span {
+        color:white;
+    }
+    .hidden-rsv {
+        overflow: hidden !important;
+    }
+    .galeria-container:nth-child(2) {
+        margin: 0 !important;
+    }
+    .galeria-container:nth-child(2) .prod-container {
+        height:40vh !important;
+        margin-top: -1% !important;
+    }
+    .whitie a {
+        color:white !important;
+        border:3px solid white !important;
+    }
+
+    /*CONTACTOLOKOSHON*/
+    .contactanos {
+        margin-top:35%;
+    }
+    .contactanos-info-container {
+        width:80%;
+        height:60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactanos-info-container h2, .contactanos-info-container p {
+        text-align: center !important;
+    }
+    .map-location {
+        padding-top:25%;
+        flex-wrap: wrap;
+        height:auto !important;
+    }
+    .google-maps-container, .form-contact-container {
+        width:100%;
+        height:100vh;
+    }
+    .google-maps-container {
+        height:50vh;
+    }
+    #map {
+        width:100%;
+        height:100%;
+    }
+    .map-location-container {
+        width:80%;
+        height:22%;
+        justify-content: center;
+        align-items: center;
+        left:auto !important;
+        top:-12% !important;
+        right:3%;
+    }
+    .map-location-container p, .map-location-container span {
+        text-align: center;
+    }
+    #contactus img {
+        width:30% !important;
+    }
+    footer {
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 
 @media (min-width: 576px) {
-
+    
 }
 
 /* Medium devices (tablets, 768px and up)*/

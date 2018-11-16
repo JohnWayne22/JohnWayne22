@@ -1,0 +1,99 @@
+.global-container {
+    width:100%;
+    height:100%;
+}
+.loader-container {
+    width:100vw;
+    height:100vh;
+    background-color:white;
+    z-index:9999999;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:1s ease-in-out all;
+}
+.loader {
+    width:250px;
+    height:250px;
+    background-image: url('../svg/logo.png');
+    background-size: cover;
+    background-position: center;
+    border-radius:50%;
+    animation-name: spinnie;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.loader::after {
+    content:"";
+    position:absolute;
+    width:300px;
+    height: 300px;
+    top:50%;
+    left:50%;
+    border-radius:50%;
+    transform:translate(-50%, -50%);
+    border:4px solid #212121;
+    border-left:4px solid transparent;
+    animation-name: spin;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.loader::before {
+    content:"";
+    position:absolute;
+    width:350px;
+    height: 350px;
+    top:50%;
+    left:50%;
+    border-radius:50%;
+    transform:translate(-50%, -50%);
+    border:4px solid #455A64 ;
+    border-right:4px solid transparent;
+    animation-name: spin;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.difuminate {
+    opacity: 0;
+}
+.dont-display-loader {
+    display: none;
+}
+.welcome {
+    animation-name:welcome;
+    animation-duration:1s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@keyframes reversespin {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+@keyframes welcome {
+    from {
+        opacity:0;
+        transform:scale(0.8);
+    }
+    to {
+        opacity:1;
+        transform:scale(1);
+    }
+}

@@ -56,8 +56,6 @@
     margin:auto;
     width:80%;
     border:1px solid rgb(133, 133, 133);
-    margin-top:10%;
-    margin-bottom:10%;
 }
 .coth2 {
     font-size:4em;
@@ -66,4 +64,54 @@
     letter-spacing: 8pt;
     margin: auto;
     text-align: center;
+    margin-top:10%;
+    text-transform: uppercase;
+    margin-bottom:3%;
+}
+.social-media-normal {
+    width:100%;
+    height:10vh;
+    background-color: #e57373;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-normal a:visited, .social-media-normal a:link {
+    width:40px;
+    height:40px;
+    background-color:#25d366;
+    border-radius:10000px;
+    margin-right:1%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.4em;
+    text-decoration: none;
+}
+.social-media-normal a:nth-child(1) {
+    background-color:#4267b2;
+}
+.social-media-normal a:nth-child(2) {
+    background-color:#F57C00;
+}
+.social-media-normal a i {
+    color:white;
+}
+.social-media-normal img {
+    width:30%;
+}
+footer {
+    width:100%;
+    height:15vh;
+    background-color: #ef5350;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0px;
+}
+footer p {
+    margin-right:5%;
+}
+.logo-footer {
+    width:10% !important;
 }

@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>--- TODO ---</title>
+    <title>InkPrint Mérida</title>
     
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/products.css">
     <link rel="stylesheet" href="./css/work.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/social.css">
     <link rel="stylesheet" href="./css/coti.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/galeria.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -28,201 +34,530 @@
     <![endif]-->
   </head>
   <body>
-    <header class="header">
-        <div class="header-container">
-            <div data-aos="fade-down" data-aos-duration="2200" class="header-title">
-                <span>Sellos y Láser</span>
-                <span class="eich1">InkPrint</h1>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <div class="global-container">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" role="navigation" id="navbarsExample04">
+                    <ul class="navbar-nav mr-auto dont-show-please">
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="#about">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="#servicios-scroll">Nuestros servicios</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="#materiales">Materiales</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="/galeria">Galería</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="/galeria">Productos</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="#cotizaciones">Cotizaciones</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" href="#contactus">Contáctanos</span></a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-block" href="#">
+                        <img src="./svg/logo.png" alt="">
+                    </a>
+                </div>
+            </nav>
+        
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide lebron-james" style="width:100%; height:100vh; background-color:#aa2a43;">
+                        <div class="left-slide">
+                            <div class="title-slide-container">
+                                <h2>Precio</h2>
+                                <span>a mayoristas</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime similique in ad adipisci soluta praesentium natus autem non beatae aperiam, obcaecati dolorum tempore repellat ducimus culpa nemo officia excepturi?</p>
+                            </div>
+                        </div>
+                        <div class="right-slide">
+                            <div class="link-title-container">
+                                <h2>Especial</h2>
+                                <a href="#" target="_blank" onclick="event.preventDefault()">Raúl González</a>
+                            </div>
+                            <img src="./svg/nice1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide lebron-james" style="width:100%; height:100vh; background-color:#31e089;">
+                        <div class="right-slide right-slide2 right-slide-even">
+                            <div class="link-title-container">
+                                <h2>Especial</h2>
+                                <a href="#" target="_blank" onclick="event.preventDefault()">Raúl González</a>
+                            </div>
+                            <img src="./svg/nice1.png" alt="">
+                        </div>
+                        <div class="left-slide left-slide-even">
+                            <div class="title-slide-container red-color">
+                                <h2>Precio</h2>
+                                <span>a mayoristas</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime similique in ad adipisci soluta praesentium natus autem non beatae aperiam, obcaecati dolorum tempore repellat ducimus culpa nemo officia excepturi?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide lebron-james" style="width:100%; height:100vh; background-color:#a2aa2a;">
+                        <div class="left-slide">
+                            <div class="title-slide-container blue-color">
+                                <h2>Precio</h2>
+                                <span>a mayoristas</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime similique in ad adipisci soluta praesentium natus autem non beatae aperiam, obcaecati dolorum tempore repellat ducimus culpa nemo officia excepturi?</p>
+                            </div>
+                        </div>
+                        <div class="right-slide right-slide3">
+                            <div class="link-title-container">
+                                <h2>Especial</h2>
+                                <a href="#" target="_blank" onclick="event.preventDefault()">Raúl González</a>
+                            </div>
+                            <img src="./svg/nice1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide lebron-james" style="width:100%; height:100vh; background-color:#a2aa2a;">
+                        <div class="right-slide right-slide4 right-slide-even">
+                            <div class="link-title-container">
+                                <h2>Especial</h2>
+                                <a href="#" target="_blank" onclick="event.preventDefault()">Raúl González</a>
+                            </div>
+                            <img src="./svg/nice1.png" alt="">
+                        </div>
+                        <div class="left-slide left-slide-even">
+                            <div class="title-slide-container purple-color">
+                                <h2>Precio</h2>
+                                <span>a mayoristas</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime similique in ad adipisci soluta praesentium natus autem non beatae aperiam, obcaecati dolorum tempore repellat ducimus culpa nemo officia excepturi?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+        
+                <!-- If we need navigation buttons -->
+                <div class="previe"></div>
+                <div class="nextie"></div>
             </div>
-        </div>
-    </header>
-    <section class="about-container">
-        <div class="about-text-container">
-            <div class="line-container">
-                <div data-aos-duration="1400" data-aos="fade-right" class="line"></div>
+        
+            <!--<div class="logo"></div>-->
+            <!--<header class="header">
+                <div class="header-container">
+                    <div data-aos="fade-down" data-aos-duration="2200" class="header-title">
+                        <span>Sellos y Láser</span>
+                        <span class="eich1">InkPrint</h1>
+                    </div>
+                </div>
+            </header>-->
+            <section id="about" class="about-container">
+                <div class="about-text-container">
+                    <div class="line-container">
+                        <div data-aos-duration="1400" data-aos="fade-right" class="line"></div>
+                    </div>
+                    <div class="text-container">
+                        <p data-aos-duration="1200" data-aos="fade-up"><b>Inkprint</b> es una empresa comprometida con nuestros clientes, ofreciendo la mejor calidad en productos y servicios. Pero sobre todo a precios accesibles.</p>
+                    </div>
+                </div>
+                <div class="title-container">
+                    <div><span data-aos-duration="800" data-aos="fade-up">Nuestro</span> <span data-aos-duration="800" data-aos="fade-down" data-aos-delay="600">gran</span> <b data-aos-delay="1200" data-aos-duration="800" data-aos="fade-up">trabajo</b></div>
+                </div>
+            </section>
+            
+            <section class="work-container">
+                <div class="work-title">
+                    <h2 data-aos-duration="1500" data-aos="flip-down">Qué <br>hacemos <br>en <br> Inkprint</h2>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/laser.png" alt="Idea"> 
+                    <h4>Láser <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+            </section>
+            <div class="backcontainer">
+                <div class="backimage">
+                    <div class="backtitle-container">
+                        <a href="#">
+                            <span>Corte, marcado y grabado</span>
+                            <h2>Láser</h2>
+                        </a>
+                    </div>
+                </div>
+                <!--<div class="material-container">
+                    <h2>Materiales disponibles</h2>
+                    <div class="material-icons-container">
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                        <div class="material-self">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico</h4>
+                        </div>
+                    </div>
+                </div>-->
             </div>
-            <div class="text-container">
-                <p data-aos-duration="1200" data-aos="fade-up"><b>Inkprint</b> es una empresa comprometida con nuestros clientes, ofreciendo la mejor calidad en productos y servicios. Pero sobre todo a precios accesibles.</p>
-            </div>
-        </div>
-        <div class="title-container">
-            <div><span data-aos-duration="800" data-aos="fade-up">Nuestro</span> <span data-aos-duration="800" data-aos="fade-down">gran</span> <b data-aos-delay="1200" data-aos-duration="800" data-aos="fade-up">trabajo</b></div>
-        </div>
-    </section>
-    <section class="products-container">
-        <div data-aos-duration="800" data-aos="fade-right" class="product">
-            <div data-aos-duration="800" data-aos="zoom-in" class="product-name">
-                <span>LÁSER</span>
-                <i class="arr zmdi zmdi-trending-flat"></i>
-            </div>
-            <img class="p-img" data-aos-duration="800" data-aos="zoom-in-left" src="./svg/8.jpg" alt="">
-        </div>
-        <div data-aos-duration="800" data-aos="fade-left" class="product">
-            <div data-aos-duration="800" data-aos="zoom-in" class="product-name">
-                <span>SELLOS</span>
-                <i class="arr zmdi zmdi-trending-flat"></i>
-            </div>
-            <img class="p-img" data-aos-duration="800" data-aos="zoom-in-left" src="./svg/fotos2/19.jpg" alt="">
-        </div>
-    </section>
-    <section class="work-container">
-        <div class="work-title">
-            <h2 data-aos-duration="1500" data-aos="flip-down">Qué <br>hacemos <br>en <br> Inkprint</h2>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
-            <img class="sbg" src="./svg/color-scheme.png" alt="Idea"> 
-            <h4>Grabado <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
-            <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
-            <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-right" class="work-show">
-            <img class="sbg" src="./svg/laser.png" alt="Idea"> 
-            <h4>Láser <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-right" class="work-show">
-            <img class="sbg" src="./svg/crop.png" alt="Idea"> 
-            <h4>Corte <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-right" class="work-show">
-            <img class="sbg" src="./svg/paint.png" alt="Idea"> 
-            <h4>Acrílico <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-right" class="work-show">
-            <img class="sbg" src="./svg/invitation.png" alt="Idea"> 
-            <h4>Invitaciones <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-right" class="work-show">
-            <img class="sbg" src="./svg/pen.png" alt="Idea"> 
-            <h4>Marcado <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-        <div data-aos-duration="1200" data-aos="flip-right" class="work-show">
-            <img class="sbg" src="./svg/crate.png" alt="Idea"> 
-            <h4>Madera <i class="zmdi zmdi-trending-flat"></i></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
-        </div>
-    </section>
-    <section data-aos="zoom-in" data-aos-duration="800" class="gallery-container">
-        <div class="images-container">
-            <div class="img-container">
-                <div class="img-cover">
-                    <h2>Sellos <br> perrones</h2>
-                    <a class="bg-link" href="#cotizaciones">Cotizar precios</a>
+            <section class="work-container">
+                <div class="work-title">
+                    <h2 data-aos-duration="1500" data-aos="flip-down">Escoge <br>tu <br>material</h2>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/laser.png" alt="Idea"> 
+                    <h4>Láser <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
+                </div>
+            </section>
+            <!--<section id="materiales" class="global">
+                <h2>Materiales</h2>
+                <div class="divider divider-global"></div>
+                <div class="icons-global">
+                    <div class="icons-container">
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/plastic-bottle.png" alt="Idea"> 
+                            <h4>Acrílico <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/wine.png" alt="Idea"> 
+                            <h4>Vidrio y cristal <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/beam.png" alt="Idea"> 
+                            <h4>Metales <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/copy.png" alt="Idea"> 
+                            <h4>Laminados bicapa <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/box.png" alt="Idea"> 
+                            <h4>Papel y cartón <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/detergent.png" alt="Idea"> 
+                            <h4>Plásticos <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/leather.png" alt="Idea"> 
+                            <h4>Cuero y textiles <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/icons/crate.png" alt="Idea"> 
+                            <h4>Madera y MDF <i class="zmdi zmdi-trending-flat"></i></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+            <div class="backcontainer back2">
+                <div class="backimage">
+                    <div class="backtitle-container">
+                        <a href="#">
+                            <span>Variedad de</span>
+                            <h2>Sellos</h2>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="img-container">
-                <div class="img-cover thmb-1">
-                    <a href="#cotizaciones">Cotizar precios</a>
-                    <h2>Sellos perrones</h2>
+            <!--<section class="global">
+                <h2 data-aos="flip-down" data-aos-duration="1300">Tipos y tintas</h2>
+                <div data-aos="zoom-in-up" data-aos-duration="1300" class="divider divider-global"></div>
+                <div class="icons-global">
+                    <div class="icons-container">
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/laser.png" alt="Idea"> 
+                            <h4>Autoentintaje</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/stamp.png" alt="Idea"> 
+                            <h4>Maderas</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
+                        </div>
+                        <div data-aos-duration="1200" data-aos="flip-left" class="icon-s">
+                            <img src="./svg/laser.png" alt="Idea"> 
+                            <h4>Secos</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover thmb-2">
-                    <a href="#cotizaciones">Cotizar precios</a>
-                    <h2>Sellos perrones</h2>
+            </section>-->
+            <section class="work-container">
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/laser.png" alt="Idea"> 
+                    <h4>Láser <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia cupiditate, laborum nam pariatur amet ab in id aliquam deleniti libero vitae esse sunt reiciendis, quibusdam est quaerat officia tenetur molestiae.</p>
                 </div>
-            </div>
-        </div>
-        <div class="images-container">
-            <div class="img-container">
-                <div class="img-cover">
-                    <a href="#cotizaciones">Cotizar precios</a>
-                    <h2>Sellos perrones</h2>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover">
-                    <a href="#cotizaciones">Cotizar precios</a>
-                    <h2>Sellos perrones</h2>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover">
-                    <a class="bg-link" href="#cotizaciones">Cotizar precios</a>
-                    <h2>Sellos <br> perrones</h2>
+                <div data-aos="flip-down" class="work-title work-title-sellos">
+                    <h2 data-aos-duration="1500" data-aos="flip-down">Nuestra <br>variedad <br> de <br> sellos</h2>
                 </div>
-            </div>
-        </div>
-        <div class="images-container">
-            <div class="img-container">
-                <div class="img-cover">
-                    <a class="bg-link" href="#">Cotizar precios</a>
-                    <h2>Sellos <br> perrones</h2>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover">
-                    <h2>Sellos perrones</h2>
-                    <a href="#cotizaciones">Cotizar precios</a>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover">
-                    <h2>Sellos perrones</h2>
-                    <a href="#cotizaciones">Cotizar precios</a>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
                 </div>
-            </div>
-        </div>
-        <div class="images-container">
-            <div class="img-container">
-                <div class="img-cover">
-                    <h2>Sellos perrones</h2>
-                    <a href="#cotizaciones">Cotizar precios</a>
+                <div data-aos-duration="1200" data-aos="flip-left" class="work-show">
+                    <img class="sbg" src="./svg/stamp.png" alt="Idea"> 
+                    <h4>Sellos <i class="zmdi zmdi-trending-flat"></i></h4>
+                    <p>Sellos didácticos, oficiales, oficina. <br>Corte y grabado con rayo laser sobre: madera, acrílico, cristal, piel, curpiel, tela, etc.</p>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover">
-                    <h2>Sellos perrones</h2>
-                    <a href="#cotizaciones">Cotizar precios</a>
+            </section>
+            <h2 style="margin-top:5%;" data-aos="zoom-in-down" data-aos-duration="900" class="coth2" id="cotizaciones">Conoce nuestros productos</h2>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="divider" style="margin-bottom:4%;"></div>
+            <div data-aos="fade-in" data-aos-duration="3000" class="galeria">
+                <div class="galeria-container">
+                    <div class="prod-container">
+                        <img class="sello-rsv" src="./svg/nice1.png" alt="">
+                        <div class="prod-title-container">
+                            <span>Autoentinaje</span>
+                            <h3>Sellos</h3>
+                            <a href="#">Desde $250</a>
+                        </div>
+                    </div>
+                    <div class="prod-container">
+                        <div class="sprod-container">
+                            <img src="./svg/nice5.png" style="z-index:0;">
+                            <div style="z-index: 1; align-items: flex-end;" class="prod-title-container">
+                                <span style="color:black;">Paquete de</span>
+                                <h3 class="inv-rsv">Invitaciones</h3>
+                                <a href="#">Desde $250</a>
+                            </div>
+                        </div>
+                        <div class="sprod-container hidden-rsv">
+                            <img class="laser-rsv" src="./svg/nice4.png" alt="">
+                            <div style="z-index:1;" class="prod-title-container">
+                                <span>Autoentinaje</span>
+                                <h3>Láser</h3>
+                                <a href="#">Desde $250</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img-container">
-                <div class="img-cover">
-                    <h2>Sellos <br> perrones</h2>
-                    <a class="bg-link" href="#">Cotizar precios</a>
+                <div class="galeria-container">
+                    <div class="prod-container">
+                        <div class="prod-title-container">
+                            <span>Buenas noticias</span>
+                            <h3>Ofertas</h3>
+                            <a href="#">Dale un vistazo</a>
+                        </div>
+                    </div>
+                    <div class="prod-container">
+                        <div class="prod-title-container whitie">
+                            <span style="text-align: center; width:100%;">Revisa nuestro</span>
+                            <h3>Catálogo</h3>
+                            <a style="color:white; border: 2px solid white;" href="#">Dale un vistazo</a>
+                        </div>
+                    </div>
                 </div>
+                <!--<div class="galeria-container">
+                    <div class="prod-container"></div>
+                    <div class="prod-container"></div>
+                    <div class="prod-container"></div>
+                </div>-->
             </div>
-        </div>
-    </section>
-    <div class="divider"></div>
-    <h2 class="coth2" id="cotizaciones">Cotizaciones</h2>
-    <section class="cot-container">
-        <div data-aos="flip-down" data-aos-duration="1000" class="cot-options">
-            <div class="option">
-                <div class="opt-title">
-                    <img src="./svg/whatsapp.png" alt="Ideona">
-                    <h3>Escribe</h3>
+            <section id="servicios-scroll" class="products-container">
+                <div data-aos-duration="800" data-aos="fade-right" class="product">
+                    <div data-aos-duration="800" data-aos="zoom-in" class="product-name">
+                        <span>LÁSER</span>
+                        <i class="arr zmdi zmdi-trending-flat"></i>
+                    </div>
+                    <img class="p-img" data-aos-duration="800" data-aos="zoom-in-left" src="./svg/8.jpg" alt="">
                 </div>
-                <p>Nos ubicamos cerca de la calle perrona a lado de ya sabes donde nuestra dirección es asdñlasmdñasdasld alasd alsdjnaslda  para más información pulsa el botón de abajo</p>
-                <a href="https://api.whatsapp.com/send?phone=5215540027228">WhatsApp</a>
-            </div>
-            <div class="option">
-                <div class="opt-title">
-                    <img src="./svg/support.png" alt="Ideona">
-                    <h3>Llama</h3>
+                <div data-aos-duration="800" data-aos="fade-left" class="product">
+                    <div data-aos-duration="800" data-aos="zoom-in" class="product-name">
+                        <span>SELLOS</span>
+                        <i class="arr zmdi zmdi-trending-flat"></i>
+                    </div>
+                    <img class="p-img" data-aos-duration="800" data-aos="zoom-in-left" src="./svg/fotos2/19.jpg" alt="">
                 </div>
-                <p>Nos ubicamos cerca de la calle perrona a lado de ya sabes donde nuestra dirección es asdñlasmdñasdasld alasd alsdjnaslda  para más información pulsa el botón de abajo</p>
-                <a id="getNumber" href="#">Nuestro número</a>
-                <a id="phoneCall" href="tel:999-921-1345">Nuestro número</a>
-            </div>
-            <div class="option">
-                <div class="opt-title">
-                    <img src="./svg/visitor.png" alt="Ideona">
-                    <h3>Visítanos</h3>
+            </section>
+            <h2 data-aos="flip-down" data-aos-duration="1300" class="coth2" id="cotizaciones">Cotizaciones</h2>
+            <div data-aos="fade-up" data-aos-duration="1300" class="divider"></div>
+            <section class="cot-container">
+                <div data-aos="flip-down" data-aos-duration="1000" class="cot-options">
+                    <div class="option">
+                        <div class="opt-title">
+                            <img src="./svg/whatsapp.png" alt="Ideona">
+                            <h3>Escribe</h3>
+                        </div>
+                        <p>Nos ubicamos cerca de la calle perrona a lado de ya sabes donde nuestra dirección es asdñlasmdñasdasld alasd alsdjnaslda  para más información pulsa el botón de abajo</p>
+                        <a href="https://api.whatsapp.com/send?phone=5215540027228">WhatsApp</a>
+                    </div>
+                    <div class="option">
+                        <div class="opt-title">
+                            <img src="./svg/support.png" alt="Ideona">
+                            <h3>Llama</h3>
+                        </div>
+                        <p>Nos ubicamos cerca de la calle perrona a lado de ya sabes donde nuestra dirección es asdñlasmdñasdasld alasd alsdjnaslda  para más información pulsa el botón de abajo</p>
+                        <a id="getNumber" href="#">Contáctanos</a>
+                        <a id="phoneCall" href="tel:999-921-1345">Contáctanos</a>
+                    </div>
+                    <div class="option">
+                        <div class="opt-title">
+                            <img src="./svg/visitor.png" alt="Ideona">
+                            <h3>Escríbe</h3>
+                        </div>
+                        <p>Nos ubicamos cerca de la calle perrona a lado de ya sabes donde nuestra dirección es asdñlasmdñasdasld alasd alsdjnaslda  para más información pulsa el botón de abajo</p>
+                        <a id="getMaps" href="https://api.whatsapp.com/send?phone=5215540027228">WhatsApp #2</a>
+                    </div>
                 </div>
-                <p>Nos ubicamos cerca de la calle perrona a lado de ya sabes donde nuestra dirección es asdñlasmdñasdasld alasd alsdjnaslda  para más información pulsa el botón de abajo</p>
-                <a id="getMaps" href="#">Cómo llegar</a>
-            </div>
-        </div>
-    </section>
+            </section>
+            <section class="contactanos">
+                <div class="contactanos-info-container">
+                    <h2>¡Tenemos tu sello en 30 minutos!</h2>
+                    <p>(999) 999-99-99 </p>
+                    <p>09:00 a 18:00 hrs de Lunes a Viernes</p>
+                </div>
+            </section>
+            <section class="map-location">
+                <div class="map-location-container">
+                    <p>Calle 68 #544 Loc. 1 x 63 y 65, Col. Centro, Mérida.</p>
+                    <span>Nos encontramos a un lado de la CONAGUA.</span>
+                </div>
+                <div class="google-maps-container">
+                    <div id="map"></div>
+                </div>
+                <div class="form-contact-container">
+                    <div id="container">
+        
+                        <span class="input">
+                            <input type="text" class="input__field" id="input-1" />
+                            <label for="input-1" class="input__label">
+                            <span class="input__label-content">Nombre</span>
+                        </label>
+                        </span>
+                        
+                        <span class="input">
+                            <input type="text" class="input__field" id="input-2" />
+                            <label for="input-2" class="input__label">
+                            <span class="input__label-content">Apellidos</span>
+                            </label>
+                        </span>
+                        
+                        <span class="input">
+                            <input type="text" class="input__field" id="input-3" />
+                            <label for="input-3" class="input__label">
+                            <span class="input__label-content">Teléfono</span>
+                            </label>
+                        </span>
+                        
+                        <span class="input">
+                            <input type="text" class="input__field" id="input-4" />
+                            <label for="input-4" class="input__label">
+                            <span class="input__label-content">Correo</span>
+                            </label>
+                        </span>
+                        
+                        <span class="input message">
+                            <textarea class="input__field" id="input-5"></textarea>
+                            <label for="input-5" class="input__label">
+                            <span class="input__label-content">Mensaje</span>
+                            </label>
+                        </span>
+                        
+                        <button onclick="sendMail();" id="send-button" type="button">Enviar</button>
+                        
+                    </div>                      
+                </div>
+            </section>
+            <section id="contactus" class="social-media-normal">
+                <a href="https://www.facebook.com/SellosyLaserINKprint/" target="_blank"><i class="zmdi zmdi-facebook"></i></a>
+                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                <img class="logo-footer" src="./svg/logo.png" alt="" srcset="">
+                <a href="https://api.whatsapp.com/send?phone=5215540027228"><i class="zmdi zmdi-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5215540027228"><i class="zmdi zmdi-whatsapp"></i></a>
+            </section>
+            <footer>
+                <small>2018 InkPrint Mérida. Todos los derechos reservados.</small>
+            </footer>
+    </div>
 
 
     <div id="modalNumero" class="modal" tabindex="-1" role="dialog">
@@ -256,7 +591,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="map"></div>
+                <!--<div id="map"></div>-->
                 <br>
                 <p> <b>Dirección: </b> Calle 68 #544 Loc. 1 x 63 y 65, Col. Centro, Mérida.</p>
             </div>
@@ -276,15 +611,27 @@
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <!--<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./js/form.js" crossorigin="anonymous"></script>
     <script>
     AOS.init();
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip(); 
+
+        $(".loader-container").addClass("difuminate");
+        $(".global-container").addClass("welcome");
+        $(".loader-container").addClass("dont-display-loader");
     });
 
     $(document).ready(function () {
+        $('.navbar-collapse a').click(function (e) {
+            $('.navbar-collapse').collapse('toggle');
+        });
+
         $("#getNumber").on("click", function(e) {
             e.preventDefault();
             $("#modalNumero").modal();
@@ -295,12 +642,56 @@
             $("#modalMaps").modal();
         });
 
+        var mySwiper = new Swiper ('.swiper-container', {
+            autoplay: {
+                delay: 1400
+            },
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 400, 
+            spaceBetween: 200,
+            init:true,
+            effect: 'fade',
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+            nextEl: '.nextie',
+            prevEl: '.previe',
+            }
+        });
+
+        mySwiper.init()
+
+        
+
         $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
 
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
+            }, 1200);
+        });
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('about'),
+            handler: function(direction) {
+                if(direction == "down") {
+                    $("nav").addClass("navwithbackgroundcolor");
+                    $(".navbar-brand img").addClass("navbarimagesmall");
+                    $("nav ul").removeClass("dont-show-please");
+                } else {
+                    $("nav").removeClass("navwithbackgroundcolor");
+                    $(".navbar-brand img").removeClass("navbarimagesmall");
+                    $("nav ul").addClass("dont-show-please");
+                }
+            },
+            offset: '10%'
         });
     });
     </script>
@@ -313,7 +704,7 @@
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
             // How zoomed in you want the map to start at (always required)
-            zoom: 11,
+            zoom: 17,
         
             // disable UI
             disableDefaultUI: true,

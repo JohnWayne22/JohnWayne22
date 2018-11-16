@@ -10,7 +10,7 @@
     align-items: flex-start;
 }
 .work-show {
-    width:26%;
+    width:23%;
     height:50%;
     display:flex;
     flex-direction: column;
@@ -51,4 +51,8 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3em;
+}
+.work-title-sellos {
+    text-align: right;
+    justify-content: flex-end;
 }
