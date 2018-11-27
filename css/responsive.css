@@ -20,8 +20,12 @@
     .c-title {
         font-size:2.2em;
     }
-    .map-location-container span {
-        font-size:1em;
+    .map-location-container {
+        width:50% !important;
+        height:45% !important;
+    }
+    .map-location-container span, .map-location-container p {
+        font-size:0.86em;
     }
     /* CONTACTANOS---- */
     .about-container {

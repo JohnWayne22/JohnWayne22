@@ -3,73 +3,6 @@ body {
     overflow-x: hidden;
     width:100%;
 }
-.header {
-    width:100%;
-    height:100vh;
-    background-image: url("../svg/header-f.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.header-container {
-    width:100%;
-    height:100%;
-    background-color:rgba(0, 0, 0, 0.5);
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    position:absolute;
-    top:0;
-    left:0;
-}
-.logo {
-    width:10%;
-    height:18%;
-    background-image: url('../svg/logo.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    z-index:3000;
-    opacity:0.65;
-}
-.header-title {
-    color:white;
-    margin-right:15%;
-    margin-bottom:10%;
-    width:30%;
-    height:20%;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:flex-start;
-    padding:0px;
-}
-.header-title span {
-    width:100%;
-    height:30%;
-    font-weight:lighter;
-    font-size:2em;
-    text-align: justify;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-}
-.eich1 {
-    width:100% !important;
-    height:70% !important;
-    font-weight:bolder !important;
-    font-size:4em !important;
-    text-align: justify;
-    text-transform: uppercase;
-    letter-spacing: 13px !important;
-}
-.header-title span:after {
-    content: "" !important;
-    display: inline-block !important;
-    width: 100% !important;
-}
-  
 
 
 
@@ -125,34 +58,8 @@ body {
 i {
     color:#AB47BC;
 }
-.navbar-brand img {
-    width:25%;
-}
-.navbar-brand {
-    display:flex !important;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav {
-    background-color: transparent;
-    position:fixed;
-    z-index:99999 !important;
-}
 #getNumber {
     display:flex;
     justify-content:center;
     align-items: center;
-}
-nav {
-    transition:1s ease-in-out all;
-}
-.navbar-brand img {
-    width:40%;
-    transition:1s ease-in-out all;
-}
-.navwithbackgroundcolor {
-    background-color: #424242;
-}
-.navbarimagesmall {
-    width:15% !important;
 }
