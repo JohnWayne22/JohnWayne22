@@ -69,7 +69,7 @@
 .backimage {
     width:40%;
     height:50%;
-    border:4pt solid rgba(211,47,47 ,1);
+    border:4pt solid #dd4f4f;
     padding:1%;
     display:flex;
     justify-content: center;
@@ -77,10 +77,13 @@
     border-radius:2px;
     margin-bottom:4%;
 }
+.backimage2 {
+    border-color:#00c569;
+}
 .backtitle-container {
     width:100%;
     height:100%;
-    background-color: rgba(211,47,47 ,1);
+    background-color: #dd4f4f;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -90,6 +93,9 @@
     justify-items: center;
     color:white;
     text-transform: uppercase;
+}
+.backimage2 .backtitle-container {
+    background-color:#00c569;
 }
 .backtitle-container a:visited, .backtitle-container a:link {
     display:flex;
