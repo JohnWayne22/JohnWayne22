@@ -7,6 +7,23 @@
         width:100vw !important;
         overflow-x: hidden;
     }
+    /* CONTACTANOS */
+    .contactanos-info-container h2 {
+        font-size:1.2em;
+    }
+    .form-contact-container {
+        margin-top:40%;
+    }
+    .logui {
+        width:35% !important;
+    }
+    .c-title {
+        font-size:2.2em;
+    }
+    .map-location-container span {
+        font-size:1em;
+    }
+    /* CONTACTANOS---- */
     .about-container {
         height:auto !important;
     }
@@ -344,13 +361,351 @@
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
     
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+html, body {
+        width:100vw !important;
+        overflow-x: hidden;
+    }
+    .about-container {
+        height:auto !important;
+    }
+    .about-text-container {
+        width:100%;
+        height:auto;
+        margin-top:13.5% !important;
+        margin-bottom:13.5% !important;
+    }
+    .text-container {
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    .text-container p {
+        font-size:1.6em;
+        text-align: justify;
+        width:90%;
+        height:80%;
+    }
+    .line-container {
+        display:none;
+    }
+    .line {
+        margin-top:18%;
+    }
+    .about-text-container {
+        margin:0;
+    }
+    .title-container {
+        display:flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom:10%;
+        margin-top:2%;
+    }
+    .title-container div {
+        text-align: center;
+    }
 
+    /*PRODUCTS CONTAINER*/
+    .product {
+        justify-content: flex-start;
+    }
+    .products-container {
+        flex-direction:column;
+        height:60vh;
+    }
+    .products-container .product {
+        width:100%;
+    }
+    .product-name {
+        width:50%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .product-name span {
+        font-size:1.5em;
+        letter-spacing:8px;
+        font-weight: lighter;
+    }
+    .product img {
+        width:40%;
+        height:50%;
+    }
+    /*WORK CONTAINER*/
+    .work-container {
+        width:100%;
+        flex-direction:column;
+        height:auto;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items:center;
+    }
+    .work-title, .work-show {
+        width:100%;
+    }
+    .work-title {
+        text-align: center;
+        justify-content: center;
+        margin-top:4%;
+        margin-bottom:12%;
+    }
+    .work-title h2 {
+        font-size:2.4em;
+    }
+    .work-show {
+        align-items: center;
+        width:95%;
+        margin-bottom:12%;
+    }
+    .work-show p {
+        text-align: center;
+    }
+    .header-container {
+        justify-content:center;
+        align-items: center;
+    }
+    .header-title {
+        width:100%;
+        margin:0;
+    }
+    .header-title span {
+        font-size:1em;
+        color:white;
+        text-align:center;
+    }
+    .eich1 {
+        font-size:3em !important;
+        color:white;
+        letter-spacing: 0px;
+        text-align:center;
+    }
+    /*social media*/
+    .social-media {
+        display:none !important;
+    }
+
+    /*gallery*/
+    .gallery-container {
+        width:100%;
+        height:auto !important;
+    }
+    .images-container {
+        width:100% !important;
+        height:auto !important;
+    }
+    .img-container {
+        width:100% !important;
+        height:80vh !important;
+    }
+    .img-cover {
+        background-color:rgba(0,0,0, 0.65);
+    }
+    .img-cover a {
+        opacity:1;
+    }
+    .img-cover h2 {
+        background-color:transparent;
+        color:white;
+    }
+    .bg-link {
+        color:white;
+        text-transform: uppercase;
+        text-decoration: none;
+        border:1pt solid white;
+        width:75% !important;
+        height:12% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:0.65s ease-in-out all;
+        font-weight: lighter;
+    }
+
+    /*COTIZACIONES*/
+    .divider {
+        margin-top:15% !important;
+        margin-bottom:15% !important;
+    }
+    .coth2 {
+        width:100%;
+        text-align: center;
+        font-size:2.4em !important;
+        font-weight:lighter !important;
+        letter-spacing: 0px !important;
+        text-transform: uppercase;
+        margin-bottom:20% !important;
+    }
+    .cot-container {
+        height:auto !important;
+    }
+    .cot-options {
+        width:100%;
+        flex-wrap: wrap;
+    }
+    .cot-options .option {
+        width:100%;
+        height:auto !important;
+        margin-bottom:15% !important;
+    }
+    .cot-options .option a {
+        padding:8px;
+    }
+    .cot-options .option a:hover {
+        letter-spacing: 0px;
+    }
+    .opt-title {
+        margin-bottom:2%;
+    }
+    #phoneCall {
+        display:flex;
+    }
+    #getNumber {
+        display:none !important;
+    }
+    nav {
+        background-color: #424242;
+    }
+    .icons-container {
+        flex-direction:column;
+    }
+    .icon-s {
+        width:95%;
+    }
+    .backimage {
+        width:93%;
+    }
+    .navbar-brand {
+        display:none !important;
+    }
+    .work-title-sellos {
+        order:-3 !important;
+    }
+    .galeria {
+        width:100%;
+        margin:auto !important;
+    }
+    .galeria-container {
+        width:100%;
+        flex-wrap: wrap !important;
+        height:auto !important;
+        margin:0% !important;
+    }
+    .prod-container {
+        width:100% !important;
+        height:100vh !important; 
+        border-radius:0px !important;
+        margin:0% !important;
+    }
+    .galeria-container:nth-child(1) .prod-container:nth-child(1) {
+        height:90vh !important;
+        padding-top:8%;
+    }
+    .sello-rsv {
+        bottom:3% !important;
+        left: auto !important;
+    }
+    .galeria-container:nth-child(1) .prod-container {
+        justify-content: center !important;
+        align-items: flex-start !important;
+        margin:0 !important;
+    }
+    .prod-title-container {
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding:0 !important;
+    }
+    .prod-title-container span {
+        width:100%;
+        text-align:center !important;
+    }
+    .galeria-container:nth-child(1) .prod-container:nth-child(2) .sprod-container, .galeria-container:nth-child(1) .prod-container:nth-child(2) .sprod-container .prod-title-container {
+        justify-content: center !important;
+        align-items: center !important;
+        padding:0;
+    }
+    .inv-rsv {
+        font-size:3em !important;
+    }
+    .laser-rsv {
+        top:auto !important;
+        bottom:-19% !important;
+        right:-11% !important;
+        transform: scaleX(-1) rotate(330deg) !important;
+        z-index: 0 !important;
+
+    }
+    .laser-rsv ~ div span {
+        color:white;
+    }
+    .hidden-rsv {
+        overflow: hidden !important;
+    }
+    .galeria-container:nth-child(2) {
+        margin: 0 !important;
+    }
+    .galeria-container:nth-child(2) .prod-container {
+        height:40vh !important;
+        margin-top: -1% !important;
+    }
+    .whitie a {
+        color:white !important;
+        border:3px solid white !important;
+    }
+
+    /*CONTACTOLOKOSHON*/
+    .contactanos {
+        margin-top:35%;
+    }
+    .contactanos-info-container {
+        width:80%;
+        height:60%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactanos-info-container h2, .contactanos-info-container p {
+        text-align: center !important;
+    }
+    .map-location {
+        padding-top:25%;
+        flex-wrap: wrap;
+        height:auto !important;
+    }
+    .google-maps-container, .form-contact-container {
+        width:100%;
+        height:100vh;
+    }
+    .google-maps-container {
+        height:50vh;
+    }
+    #map {
+        width:100%;
+        height:100%;
+    }
+    .map-location-container {
+        width:80%;
+        height:22%;
+        justify-content: center;
+        align-items: center;
+        left:auto !important;
+        top:-12% !important;
+        right:3%;
+    }
+    .map-location-container p, .map-location-container span {
+        text-align: center;
+    }
+    #contactus img {
+        width:30% !important;
+    }
+    footer {
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
